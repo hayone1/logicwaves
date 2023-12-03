@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogicwaves=self.webpackChunklogicwaves||[]).push([[3807],{7844:e=>{e.exports=JSON.parse('{"permalink":"/logicwaves/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogicwaves=self.webpackChunklogicwaves||[]).push([[7056],{8410:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/logicwaves/blog/tags/hello","allTagsPath":"/logicwaves/blog/tags","count":2,"unlisted":false}')}}]);
