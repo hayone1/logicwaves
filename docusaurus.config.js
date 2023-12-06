@@ -9,8 +9,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Logic Waves',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'One-stop shop for your technical business solutions ',
+  favicon: 'img/main/favicon.png',
 
   // Set the production url of your site here
   url: 'https://hayone1.github.io',
@@ -36,6 +36,20 @@ const config = {
     locales: ['en'],
   },
 
+
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ]
+  ],
+
   presets: [
     [
       'classic',
@@ -45,18 +59,27 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/animate.min.css',
+            './src/css/custom.css',
+            './src/css/fontawesome.min.css',
+            // './src/css/magnific.min.css',
+            // './src/css/nice-select.min.css',
+            './src/css/bootstrap.min.css',
+            './src/css/responsive.css',
+            // './src/css/rtl-style.css',
+          ],
         },
       }),
     ],
@@ -68,70 +91,76 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Logic Waves',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo',
+          src: 'img/main/favicon.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          {to: '#AboutCompany', label: 'About Us', position: 'left'},
+          {to: '#AboutTeam', label: 'Our Team', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: '#contactUs',
+            label: 'Contact Us',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'Team',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Our Team',
+                to: '#AboutTeam',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'About',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'About Us',
+                href: '#AboutCompany',
               },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              // {
+              //   label: 'Discord',
+              //   href: 'https://discordapp.com/invite/docusaurus',
+              // },
+              // {
+              //   label: 'Twitter',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
             ],
           },
           {
-            title: 'More',
+            title: 'Contact Us',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Linkedin',
+                to: 'https://www.linkedin.com/in/ronkedaini/',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Facebook',
+                to: 'https://www.linkedin.com/in/ronkedaini/',
+              },
+              {
+                label: 'Twitter-X',
+                to: 'https://www.linkedin.com/in/ronkedaini/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Logic waves`,
       },
       prism: {
         theme: prismThemes.github,

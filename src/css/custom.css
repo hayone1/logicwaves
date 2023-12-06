@@ -4,6 +4,12 @@
  * work well for content-centric websites.
  */
 
+/*-----------------
+    # Typography
+-----------------*/
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:400,500,600,700&display=swap");
+
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #295e89;
@@ -13,8 +19,21 @@
   --ifm-color-primary-light: #2d6797;
   --ifm-color-primary-lighter: #2f6c9e;
   --ifm-color-primary-lightest: #357ab2;
+
+  --bs-primary: #3176AF;
+
+  --ifm-color-secondary: #292E89;
+  --ifm-color-accent: #89295e;
+  --ifm-background-color: #ffffff;
+  --ifm-heading-color: #2b3037;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-body-font: "Plus Jakarta Sans", sans-serif;
+  --ifm-heading-font: "Plus Jakarta Sans", sans-serif;
+  --body-font-size: 16px;
+  --line-height30: 1.7;
+  --docusauruscontent-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --hex-background: url("https://preline.co/assets/svg/examples/polygon-bg-element.svg")
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -26,5 +45,57 @@
   --ifm-color-primary-light: #74c0ff;
   --ifm-color-primary-lighter: #85c8ff;
   --ifm-color-primary-lightest: #b7dfff;
+  
+  --ifm-color-secondary: #777cdf;
+  --ifm-background-color: #1b1b1d;
+  --ifm-color-accent: #de4a9b	;
+
+  --ifm-heading-color: #ededed;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --hex-background: url("https://preline.co/assets/svg/component/squared-bg-element-dark.svg")
+}
+
+.hero-background{
+  background-image: var(--hex-background);
+}
+
+.card{
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.main-background{
+  background-color: var(--ifm-background-color);
+}
+
+.accent-text {
+  color: var(--ifm-color-accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+  font-family: var(--ifm-heading-font);
+}
+
+p, 
+a {
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+  font-family: var(--ifm-heading-font);
+}
+
+span {
+  color: var(--ifm-heading-color);
+  /* font-weight: 600; */
+  font-family: var(--ifm-heading-font);
 }
