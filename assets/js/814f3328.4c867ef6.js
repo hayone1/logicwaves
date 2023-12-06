@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogicwaves=self.webpackChunklogicwaves||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Coming Soon","permalink":"/logicwaves/blog/Coming Soon","unlisted":false}]}')}}]);

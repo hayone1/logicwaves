@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklogicwaves=self.webpackChunklogicwaves||[]).push([[4126],{9276:e=>{e.exports=JSON.parse('{"permalink":"/logicwaves/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
