@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hayone1.github.io/logicwaves/blog</id>
-    <title>Logic Waves Blog</title>
+    <title>Tech Converge Blog</title>
     <updated>2023-12-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hayone1.github.io/logicwaves/blog"/>
-    <subtitle>Logic Waves Blog</subtitle>
+    <subtitle>Tech Converge Blog</subtitle>
     <icon>https://hayone1.github.io/logicwaves/img/main/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[Coming Soon]]></title>
