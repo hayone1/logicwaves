@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Logic Waves',
+  title: 'Tech Converge',
   tagline: 'One-stop shop for your technical business solutions ',
   favicon: 'img/main/favicon.png',
 
@@ -89,9 +89,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/main/favicon.png',
       navbar: {
-        title: 'Logic Waves',
+        title: 'Tech Converge',
         logo: {
           alt: 'Logo',
           src: 'img/main/favicon.svg',
@@ -160,7 +160,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Logic waves`,
+        copyright: `Copyright © ${new Date().getFullYear()} Tech Converge`,
       },
       prism: {
         theme: prismThemes.github,
